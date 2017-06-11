@@ -17,6 +17,29 @@ class User {
   let uid: String
   let username: String
   
+  // MARK: - Singleton
+  
+  // 1
+  private static var _current: User?
+  
+  // 2
+  static var current: User {
+    // 3
+    guard let currentUser = _current else {
+      fatalError("Error: current user doesn't exist")
+    }
+    
+    // 4
+    return currentUser
+  }
+  
+  // MARK: - Class Methods
+  
+  // 5
+  static func setCurrent(_ user: User) {
+    _current = user
+  }
+  
   // MARK: - Init
   
   init(uid: String, username: String) {
