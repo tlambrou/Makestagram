@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6pk-lS-iUy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="Sqf-OD-n7s">
+            <objects>
+                <viewController id="NLs-b5-LxY" customClass="HomeViewController" customModule="Makestagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xhB-kB-sOT"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Td-ho-tJI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M8l-0F-B04">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UT4-GS-m6K">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostImageCell" id="ULu-Qs-eCG">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ULu-Qs-eCG" id="Ypr-zl-Ljg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="NLs-b5-LxY" id="6p5-bN-0n9"/>
+                                    <outlet property="delegate" destination="NLs-b5-LxY" id="yaH-oo-nWF"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UT4-GS-m6K" firstAttribute="top" secondItem="M8l-0F-B04" secondAttribute="top" id="FFv-ec-chr"/>
+                            <constraint firstAttribute="bottom" secondItem="UT4-GS-m6K" secondAttribute="bottom" id="IQ9-PJ-LQJ"/>
+                            <constraint firstItem="UT4-GS-m6K" firstAttribute="leading" secondItem="M8l-0F-B04" secondAttribute="leading" id="Jb7-cL-ZeI"/>
+                            <constraint firstAttribute="trailing" secondItem="UT4-GS-m6K" secondAttribute="trailing" id="wU5-3M-5u9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mdi-Y8-8Sr"/>
+                    <connections>
+                        <outlet property="tableView" destination="UT4-GS-m6K" id="Mgj-R1-cSs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zkp-tQ-gbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1247.2" y="-1071.8140929535234"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="l8J-es-yEm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6pk-lS-iUy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tab_home_black" id="ixA-gu-EAj">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CDQ-7W-JXc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NLs-b5-LxY" kind="relationship" relationship="rootViewController" id="ldu-Ya-mYY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rpj-mz-7Vx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="-1071.8140929535234"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_home_black" width="25" height="25"/>
+    </resources>
+</document>
