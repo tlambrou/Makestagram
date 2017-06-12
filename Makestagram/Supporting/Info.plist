@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Share photos with your friends!</string>
+	<string>$(PRODUCT_NAME) wants you to enable sharing photos with your friends!</string>
 	<key>NSCameraUsageDescription</key>
-	<string>Take photos with your phone.</string>
+	<string>$(PRODUCT_NAME) wants you to enable taking photos with your phone.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
