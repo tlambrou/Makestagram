@@ -29,6 +29,7 @@
 		967858161EEE2FD200D7DBB4 /* UIImage+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967858151EEE2FD200D7DBB4 /* UIImage+Size.swift */; };
 		967858181EEE305E00D7DBB4 /* StorageReference+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967858171EEE305E00D7DBB4 /* StorageReference+Post.swift */; };
 		9678581A1EEE586700D7DBB4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967858191EEE586700D7DBB4 /* Home.storyboard */; };
+		969D2A761EEE5F4E00F866D2 /* PostImageCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969D2A751EEE5F4E00F866D2 /* PostImageCellTableViewCell.swift */; };
 		CC27AA05D80C7A19355A1F5D /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1185DD3140A6DD4CE938B77 /* Pods_Makestagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		967858151EEE2FD200D7DBB4 /* UIImage+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Size.swift"; path = "Extensions/UIImage+Size.swift"; sourceTree = "<group>"; };
 		967858171EEE305E00D7DBB4 /* StorageReference+Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "StorageReference+Post.swift"; path = "Extensions/StorageReference+Post.swift"; sourceTree = "<group>"; };
 		967858191EEE586700D7DBB4 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = Storyboards/Home.storyboard; sourceTree = "<group>"; };
+		969D2A751EEE5F4E00F866D2 /* PostImageCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostImageCellTableViewCell.swift; path = Views/PostImageCellTableViewCell.swift; sourceTree = "<group>"; };
 		A1185DD3140A6DD4CE938B77 /* Pods_Makestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17BD3BDCBFC25A1F1A09F80 /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 		B1D16745445711B66F5D746A /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				961C3FEA1EE9FFA5007C8662 /* AppDelegate.swift */,
+				969D2A771EEE5F5300F866D2 /* Views */,
 				967858001EECD83900D7DBB4 /* Services */,
 				961C400A1EEA05D2007C8662 /* View Controllers */,
 				96447BE61EEB339B00F0D453 /* Models */,
@@ -185,6 +188,14 @@
 				9678580C1EECFC0E00D7DBB4 /* MGPhotoHelper.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		969D2A771EEE5F5300F866D2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				969D2A751EEE5F4E00F866D2 /* PostImageCellTableViewCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		E5415D8B3927D1E873124D15 /* Frameworks */ = {
@@ -323,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96447BE51EEB339800F0D453 /* User.swift in Sources */,
+				969D2A761EEE5F4E00F866D2 /* PostImageCellTableViewCell.swift in Sources */,
 				967858101EED2D2400D7DBB4 /* StorageService.swift in Sources */,
 				961C400E1EEA07CE007C8662 /* LoginViewController.swift in Sources */,
 				9678580B1EECF47C00D7DBB4 /* MainTabBarController.swift in Sources */,

@@ -25,18 +25,32 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostImageCell" id="ULu-Qs-eCG">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostImageCell" rowHeight="375" id="ULu-Qs-eCG" customClass="PostImageCell" customModule="Makestagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="375"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ULu-Qs-eCG" id="Ypr-zl-Ljg">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="374.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Irq-Z1-uOR">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="374.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Irq-Z1-uOR" secondAttribute="bottom" id="1Mn-O7-WsU"/>
+                                                <constraint firstItem="Irq-Z1-uOR" firstAttribute="leading" secondItem="Ypr-zl-Ljg" secondAttribute="leading" id="Dh0-1i-nFS"/>
+                                                <constraint firstAttribute="trailing" secondItem="Irq-Z1-uOR" secondAttribute="trailing" id="VXM-nd-zP9"/>
+                                                <constraint firstItem="Irq-Z1-uOR" firstAttribute="top" secondItem="Ypr-zl-Ljg" secondAttribute="top" id="qId-Zn-god"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="postImageView" destination="Irq-Z1-uOR" id="YKQ-Rj-Fhg"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="NLs-b5-LxY" id="6p5-bN-0n9"/>
-                                    <outlet property="delegate" destination="NLs-b5-LxY" id="yaH-oo-nWF"/>
+                                    <outlet property="delegate" destination="NLs-b5-LxY" id="Okm-Dh-idQ"/>
                                 </connections>
                             </tableView>
                         </subviews>
