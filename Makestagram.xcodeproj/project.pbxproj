@@ -16,6 +16,8 @@
 		961C400E1EEA07CE007C8662 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C400D1EEA07CE007C8662 /* LoginViewController.swift */; };
 		96447BE51EEB339800F0D453 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96447BE41EEB339800F0D453 /* User.swift */; };
 		96447BE81EEB36B500F0D453 /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96447BE71EEB36B500F0D453 /* CreateUsernameViewController.swift */; };
+		9656A7981EEE69D700B31C91 /* PostHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9656A7971EEE69D700B31C91 /* PostHeaderCell.swift */; };
+		9656A79A1EEE706800B31C91 /* PostActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9656A7991EEE706800B31C91 /* PostActionCell.swift */; };
 		967857FF1EECD82F00D7DBB4 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967857FE1EECD82F00D7DBB4 /* UserService.swift */; };
 		967858021EECDD7F00D7DBB4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967858011EECDD7F00D7DBB4 /* Constants.swift */; };
 		967858041EECDE4300D7DBB4 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967858031EECDE4300D7DBB4 /* Storyboard+Utility.swift */; };
@@ -45,6 +47,8 @@
 		961C400D1EEA07CE007C8662 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
 		96447BE41EEB339800F0D453 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
 		96447BE71EEB36B500F0D453 /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateUsernameViewController.swift; path = Controllers/CreateUsernameViewController.swift; sourceTree = "<group>"; };
+		9656A7971EEE69D700B31C91 /* PostHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostHeaderCell.swift; path = Views/PostHeaderCell.swift; sourceTree = "<group>"; };
+		9656A7991EEE706800B31C91 /* PostActionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostActionCell.swift; path = Views/PostActionCell.swift; sourceTree = "<group>"; };
 		967857FE1EECD82F00D7DBB4 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserService.swift; path = Services/UserService.swift; sourceTree = "<group>"; };
 		967858011EECDD7F00D7DBB4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Supporting/Constants.swift; sourceTree = "<group>"; };
 		967858031EECDE4300D7DBB4 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Storyboard+Utility.swift"; path = "Extensions/Storyboard+Utility.swift"; sourceTree = "<group>"; };
@@ -194,6 +198,8 @@
 			isa = PBXGroup;
 			children = (
 				969D2A751EEE5F4E00F866D2 /* PostImageCellTableViewCell.swift */,
+				9656A7971EEE69D700B31C91 /* PostHeaderCell.swift */,
+				9656A7991EEE706800B31C91 /* PostActionCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -338,6 +344,7 @@
 				967858101EED2D2400D7DBB4 /* StorageService.swift in Sources */,
 				961C400E1EEA07CE007C8662 /* LoginViewController.swift in Sources */,
 				9678580B1EECF47C00D7DBB4 /* MainTabBarController.swift in Sources */,
+				9656A79A1EEE706800B31C91 /* PostActionCell.swift in Sources */,
 				967857FF1EECD82F00D7DBB4 /* UserService.swift in Sources */,
 				967858141EEE2D9200D7DBB4 /* Post.swift in Sources */,
 				967858161EEE2FD200D7DBB4 /* UIImage+Size.swift in Sources */,
@@ -349,6 +356,7 @@
 				967858021EECDD7F00D7DBB4 /* Constants.swift in Sources */,
 				967858121EED2DED00D7DBB4 /* PostService.swift in Sources */,
 				96447BE81EEB36B500F0D453 /* CreateUsernameViewController.swift in Sources */,
+				9656A7981EEE69D700B31C91 /* PostHeaderCell.swift in Sources */,
 				961C3FEB1EE9FFA5007C8662 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
