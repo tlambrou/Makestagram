@@ -100,6 +100,7 @@
                                                         <constraint firstAttribute="width" secondItem="sMU-gD-AyE" secondAttribute="height" multiplier="1:1" id="bmP-hh-jee"/>
                                                     </constraints>
                                                     <state key="normal" image="btn_heart_black_outline"/>
+                                                    <state key="selected" image="btn_heart_red_solid"/>
                                                     <connections>
                                                         <action selector="likeButtonTapped:" destination="G5p-mS-F35" eventType="touchUpInside" id="gPi-Sh-b0b"/>
                                                     </connections>
@@ -194,6 +195,7 @@
     </scenes>
     <resources>
         <image name="btn_heart_black_outline" width="24" height="24"/>
+        <image name="btn_heart_red_solid" width="24" height="24"/>
         <image name="btn_options_black" width="24" height="24"/>
         <image name="tab_home_black" width="25" height="25"/>
     </resources>

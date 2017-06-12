@@ -8,7 +8,14 @@
 
 import UIKit
 
+protocol PostActionCellDelegate: class {
+  func didTapLikeButton(_ likeButton: UIButton, on cell: PostActionCell)
+}
+
 class PostActionCell: UITableViewCell {
+  
+  // MARK: - Properties
+  weak var delegate: PostActionCellDelegate?
   
   @IBOutlet weak var likeButton: UIButton!
   @IBOutlet weak var likeCountLabel: UILabel!
@@ -27,8 +34,7 @@ class PostActionCell: UITableViewCell {
     // Configure the view for the selected state
   }
   @IBAction func likeButtonTapped(_ sender: Any) {
-    print("like button tapped")
-    
+    delegate?.didTapLikeButton(sender as! UIButton, on: self)
   }
   
 }
