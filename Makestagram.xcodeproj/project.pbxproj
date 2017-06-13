@@ -22,6 +22,7 @@
 		9656A79E1EEE805200B31C91 /* FollowService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9656A79D1EEE805200B31C91 /* FollowService.swift */; };
 		9656A7A01EEE815B00B31C91 /* FindFriends.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9656A79F1EEE815B00B31C91 /* FindFriends.storyboard */; };
 		9656A7A21EEE84E100B31C91 /* FindFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9656A7A11EEE84E100B31C91 /* FindFriendsCell.swift */; };
+		9656A7A41EEFCD1200B31C91 /* DatabaseReference+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9656A7A31EEFCD1200B31C91 /* DatabaseReference+Location.swift */; };
 		967857FF1EECD82F00D7DBB4 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967857FE1EECD82F00D7DBB4 /* UserService.swift */; };
 		967858021EECDD7F00D7DBB4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967858011EECDD7F00D7DBB4 /* Constants.swift */; };
 		967858041EECDE4300D7DBB4 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967858031EECDE4300D7DBB4 /* Storyboard+Utility.swift */; };
@@ -57,6 +58,7 @@
 		9656A79D1EEE805200B31C91 /* FollowService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FollowService.swift; path = Services/FollowService.swift; sourceTree = "<group>"; };
 		9656A79F1EEE815B00B31C91 /* FindFriends.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = FindFriends.storyboard; path = Storyboards/FindFriends.storyboard; sourceTree = "<group>"; };
 		9656A7A11EEE84E100B31C91 /* FindFriendsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindFriendsCell.swift; path = Views/FindFriendsCell.swift; sourceTree = "<group>"; };
+		9656A7A31EEFCD1200B31C91 /* DatabaseReference+Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DatabaseReference+Location.swift"; path = "Extensions/DatabaseReference+Location.swift"; sourceTree = "<group>"; };
 		967857FE1EECD82F00D7DBB4 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserService.swift; path = Services/UserService.swift; sourceTree = "<group>"; };
 		967858011EECDD7F00D7DBB4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Supporting/Constants.swift; sourceTree = "<group>"; };
 		967858031EECDE4300D7DBB4 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Storyboard+Utility.swift"; path = "Extensions/Storyboard+Utility.swift"; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				967858151EEE2FD200D7DBB4 /* UIImage+Size.swift */,
 				967858171EEE305E00D7DBB4 /* StorageReference+Post.swift */,
 				967858031EECDE4300D7DBB4 /* Storyboard+Utility.swift */,
+				9656A7A31EEFCD1200B31C91 /* DatabaseReference+Location.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				9678580D1EECFC0E00D7DBB4 /* MGPhotoHelper.swift in Sources */,
 				967858041EECDE4300D7DBB4 /* Storyboard+Utility.swift in Sources */,
 				967858091EECE7BB00D7DBB4 /* FindFriendsViewController.swift in Sources */,
+				9656A7A41EEFCD1200B31C91 /* DatabaseReference+Location.swift in Sources */,
 				967858181EEE305E00D7DBB4 /* StorageReference+Post.swift in Sources */,
 				967858021EECDD7F00D7DBB4 /* Constants.swift in Sources */,
 				967858121EED2DED00D7DBB4 /* PostService.swift in Sources */,
